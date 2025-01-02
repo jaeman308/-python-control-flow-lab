@@ -31,7 +31,7 @@ def check_letter():
 
 
 # Call the function
-# check_letter()
+check_letter()
 
 
 # Exercise 2: Old enough to vote?
@@ -63,7 +63,7 @@ def check_voting_eligibility():
 
 
 # Call the function
-# check_voting_eligibility()
+check_voting_eligibility()
 
 
 # Exercise 3: Calculate Dog Years
@@ -98,7 +98,8 @@ def calculate_dog_years():
         
 
 # Call the function
-# calculate_dog_years()
+calculate_dog_years()
+
 # Exercise 4: Weather Advice
 #
 # Write a Python script named `weather_advice` that provides clothing advice based on weather conditions.
@@ -116,6 +117,8 @@ def calculate_dog_years():
 # - Use logical operators (`AND`, `OR`, `NOT`) in your if statements to handle multiple conditions.
 
 def weather_advice():
+
+    # Your control flow logic goes here
     cold = input("Is it cold yes or no?").lower()
     raining = input("Is it raining yes or no?").lower()
 
@@ -131,23 +134,10 @@ def weather_advice():
         print("Invalid input. Please answer with yes or no")
 
 
-    # Your control flow logic goes here
 
 # Call the function
-# Requirements:
-# - The function should first prompt the user to enter the month (as three characters): "Enter the month of the year (Jan - Dec):"
-# - Then, the function should prompt the user to enter the day of the month: "Enter the day of the month:"
-# - Determine the current season based on the date:
-#      - Dec 21 - Mar 19: Winter
-#      - Mar 20 - Jun 20: Spring
-#      - Jun 21 - Sep 21: Summer
-#      - Sep 22 - Dec 20: Fall
-# - Print the season for the entered date in the format: "<Mmm> <dd> is in <season>."
-#
-# Hints:
-# - Use 'in' to check if a string is in a list or tuple.
-# - Adjust the season based on the day of the month when needed.
-# - Ensure to validate input formats and handle unexpected inputs gracefully.
+weather_advice()
+
 
 
 # Exercise 5: What's the Season?
@@ -181,7 +171,6 @@ def determine_season():
         return
     
     day = int(day_input)
-    
     if day < 1 or day > 31:
         print("Must be a day between 1 - 31.")
         return
