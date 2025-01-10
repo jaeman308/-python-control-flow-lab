@@ -90,11 +90,11 @@ def calculate_dog_years():
     dogs_age = int(dogs_age_input)
 
     if dogs_age <= 2:
-        result_a = (dogs_age * 10)
+        result_a = dogs_age * 10
         print(f"The dog's age in dog years is {result_a}")
-    else: 
-        result_b =(dogs_age * 7)
-        pritn(f"The dog's age in dog years is {result_b}")
+    else:
+        result_b = 2 * 10 + (dogs_age - 2) * 7
+        print(f"The dog's age in dog years is {result_b}")
         
 
 # Call the function
